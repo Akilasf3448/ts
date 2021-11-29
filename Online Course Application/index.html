@@ -1,0 +1,58 @@
+<html>
+    <head>
+        <title>Online Course Application</title>
+       <link rel="stylesheet" href="Style/Style.CSS">
+       <script src="Script/Script.js"></script>
+    </head>
+ <body>
+    <div id="main">
+        <h1><B>Home Page</B></h1>
+        <button onclick="newUser()">New User</button> &nbsp;
+        <button onclick="existingUser()">Existing User</button>
+    </div>
+    <div id="newUser">
+
+        <label> User Name : </label><br>
+        <input type="text" id="name"><label id="labelName"></label><br><br>
+        <label> Age : </label><br>
+        <input type="text" id="age"><label id="labelAge"></label><br><br>
+        <label> Mobile Number : </label><br>
+        <input type="text" id="mobileNumber"><label id="labelMobileNumber"></label><br><br>
+       <button onclick="add()">Add</button>
+    </div>
+    <div id="existingUser">
+        <label> User ID : </label><br>
+        <input type="text" id="userId"><label id="labelUserId"></label><br><br>
+        <button onclick="options()">Login</button>
+    </div>
+    <div id="options">
+        <button onclick="availableCourse()">Available Course</button>
+        <button onclick="EnrolledCourse()">Enrolled Course</button>
+    </div>
+    <div id="availableCourse">
+        <label>Available Course : </label>
+        <select name="Course" id="courseName" multiple >
+             <option value="C#">C#</option>
+             <option value="Java">Java</option>
+             <option value="HTML">HTML</option>
+             <option value="CSS">CSS</option>
+             <option value="TypeScript">TypeScript</option>
+
+        </select> <br><br>
+        
+        <label> Required Days : </label><br>
+        <input type="text" id="requiredDays"><label id="labelrequiredDays"></label><br><br>
+        <button onclick="enrolled()">Enrolled</button>
+        
+    </div>
+    <div id="EnrolledCourse">
+        <label id=label></label>
+        <button onclick="show()">Show Enrolled Course Details</button><br><br>
+        <button onclick="homePage()">Go to Home Page</button>
+        
+    </div>
+
+
+ </body>
+
+</html>

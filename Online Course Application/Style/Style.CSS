@@ -1,0 +1,18 @@
+#main{
+    display: block;
+}
+#newUser{
+    display: none;
+}
+#existingUser{
+    display: none;
+}
+#options{
+    display: none;
+}
+#availableCourse{
+    display: none;
+}
+#EnrolledCourse{
+    display: none;
+}
